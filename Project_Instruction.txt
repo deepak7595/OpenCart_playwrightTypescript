@@ -1,0 +1,38 @@
+For Project set up, refer the document. 
+npm install @faker-js/faker ----> The package is to generate random testData. 
+All the added dependencies will be available in "Package.json" file.
+"test.config.ts" -> where we maintain all the urls and other reusable contents. {Global Test Data}
+
+
+Scripts in Package.Json is completely customizable. 
+we can create what combination we want. 
+
+To run the script, npm playwright test "keywordfromScripts"
+
+
+
+----- GIT -----
+
+check document:
+
+Follow the document, if the project is new...  1st approach.
+
+for the first time, we create repository
+git init --> we will be able to see "u" next to the file name.. which represent untracked files. 
+git config --global user.name "deepak"   
+git config --global user.email "johndeepak444@gmail.com"
+git status -> show the files are in untracked
+git add -A -> All files {or} git add filename -> if we plan to commit for single file. {or} git add *.ts --> means whatever file which has the extension as .ts. will be moved
+{or} git add folderName --> means all file within the folder {or} git add . --> all files
+
+
+
+
+
+
+
+if we work in existing project, then we have to clone the master --- 2nd approach
+
+
+
+
