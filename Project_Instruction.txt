@@ -18,12 +18,16 @@ check document:
 Follow the document, if the project is new...  1st approach.
 
 for the first time, we create repository
-git init --> we will be able to see "u" next to the file name.. which represent untracked files. 
-git config --global user.name "deepak"   
-git config --global user.email "johndeepak444@gmail.com"
-git status -> show the files are in untracked
-git add -A -> All files {or} git add filename -> if we plan to commit for single file. {or} git add *.ts --> means whatever file which has the extension as .ts. will be moved
-{or} git add folderName --> means all file within the folder {or} git add . --> all files
+1) git init --> we will be able to see "u" next to the file name.. which represent untracked files. 
+2) git config --global user.name "deepak"   
+3) git config --global user.email "johndeepak444@gmail.com"
+4) git status -> show the files are in untracked
+5) git add -A -> All files {or} git add filename -> if we plan to commit for single file. {or} git add *.ts --> means whatever file which has the extension as .ts. will be moved
+    {or} git add folderName --> means all file within the folder {or} git add . --> all files
+we will be able to see, "u" becomes "A" now. --> Means all the files are in Indexing or Staging. {in command we have see some warning that can be ignored}
+6) git commit -m "commit message"  --> to commit the files into local repository{working space to local repository}
+    Now "A" becomes None.. Means all the files are committed in local repository
+7) git status
 
 
 
