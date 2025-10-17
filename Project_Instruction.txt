@@ -27,7 +27,18 @@ for the first time, we create repository
 we will be able to see, "u" becomes "A" now. --> Means all the files are in Indexing or Staging. {in command we have see some warning that can be ignored}
 6) git commit -m "commit message"  --> to commit the files into local repository{working space to local repository}
     Now "A" becomes None.. Means all the files are committed in local repository
-7) git status
+7) git status ---> Nothing to commit, if no items is pending
+8) Pushing the code local to remote reporistory.
+	Create new repo in GitHub. use the url
+
+https://github.com/deepak7595/OpenCart_playwrightTypescript.git  --> this url helps to connect local to remote
+
+This process also one time.. Once connection made. we wont use this.. 
+9) git push origin master  --> master is a branch. we will the code to master 
+
+it may ask to do signin... we have to provide username and password. {sometimes}
+
+Now if we go and check the repository.. all the pushes will be available in the repository in master branch. since we pushed into master. 
 
 
 
