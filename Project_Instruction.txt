@@ -41,6 +41,25 @@ it may ask to do signin... we have to provide username and password. {sometimes}
 Now if we go and check the repository.. all the pushes will be available in the repository in master branch. since we pushed into master. 
 
 
+NOW Reverse process: 
+--------------------
+
+if any file or folder is present in Remote reporistory, which is not present in local reporistory.
+we have to get the file/folder from remote reporistory {clone} 
+
+Added one sample file in remote..Now we need to get the file in local reporistory
+
+we have to type 
+--> git fetch origin master  --> will fetch the file, which is present in remote reporistory and not present in local reporistory.
+        but if the file is present in both place, content is differ. then we have to go for git pull origin master. bcz fetch only checks the file name, not the contents.
+--> git pull origin master  --> it will pull all the file from remote to local reporistory
+
+
+Better to use "git pull origin master" --> it will handle the above two scenario'sample
+
+
+
+
 
 
 
