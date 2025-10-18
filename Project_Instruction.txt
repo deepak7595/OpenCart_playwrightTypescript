@@ -60,12 +60,99 @@ Better to use "git pull origin master" --> it will handle the above two scenario
 
 
 
+2) if we work in existing project, then we have to clone the master --- 2nd approach
+
+create one empty folder and go inside it. Open terminal and execute below line.
+git clone "https://github.com/pavanoltraining/myproject.git"
+
+Now we have the code in our local repository.. We have to open the folder in Playwright.
+
+Option 1: Separate commands
+git branch <branch name> // creates a new branch
+git checkout <branch name> // switch to branch
+
+Option 2: Single command
+git checkout -b <branch-name>
+
+Use Option 2: that will create the branch and switch to the created branch in single command.
+navigate to the folder, where we clone the repository.. 
+
+go inside the folder by using "cd foldername"
+
+git checkout -b mybranch  -- execute the command. {Make sure, we execute the command, when we swicthed to the actual folder}.
+we will get switched to new branch branchname
+
+
+git branch --show-current  --> this will show where we pointing out
+
+Once changes are done in files and added new files in local repository, then 
+git add .
+
+git status
+
+git commit -m "new changes"  --> Now all the changes are in local repository  {newly created  branch not in master} from workspace.
+
+git push origin mybranch  --> created branchname
+
+Now go to github, where we can the see the created branch along with pull requests..  "Compare and pull request"
+
+we have to push our code from our own branch to Master branch. {make sure main branch is selected state}
+To do that, click "Compare and pull request" in Git hub. That will take us to the next screen
+
+Base: MAster <-- compare: mybranch
+
+Fill Add Title, and Description -> Click "Create pull request"  --> This will create the pull request.
+
+Then code will be reviewed by teammate. and then if all good, they will suggets to merge code..
+Then we directly hit "Merge pull request" button. if any comments given that we heed to solve and raise pull request again.
+
+hit "confirm merge" then we can see the code updated in Main/master branch. ...
+
+the Above process will be for first time.. 
+if we make changes again in local repository and try to merge it in main branch... we wont able to see the ""Compare and pull request"" this option in git repository.
+do chnage in local repo 
+git add .
+
+git status
+
+git commit -m "second chnages"
+
+git push origin mybranch
+
+we can able to see the chnages in our mybranch, but that chnages are not present in main/master 
+
+select our mybranch  -> go to "Pull request"
+
+click "New pull request"
+
+once we select, that will show base and Compare
+
+Option should be,
+
+Base: MAster <-- compare: mybranch
+
+
+
+Click "create pull request"
+
+Provide Description -> Click create pull request
+
+if any changes peer will provide comment. if all good, they will click "Merge pull request"
+
+click "Confirm merge".
+
+Now we able to see the changes are updated in main/master branch
 
 
 
 
 
-if we work in existing project, then we have to clone the master --- 2nd approach
+
+
+
+
+
+
 
 
 
