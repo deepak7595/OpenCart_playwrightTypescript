@@ -146,6 +146,12 @@ Now we able to see the changes are updated in main/master branch
 
 
 
+CI/CD Integration procedure: 
+-----------------------------
+
+
+
+
 
 
 
