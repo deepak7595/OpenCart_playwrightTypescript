@@ -149,7 +149,25 @@ Now we able to see the changes are updated in main/master branch
 CI/CD Integration procedure: 
 -----------------------------
 
-Checking
+Under github\workflows folder, we have playwright.yml file..
+in that file we maintain the necessary configurations..
+
+by using this, we can use github as the executor. It will run the script and provide us the results.
+It is Called GIT HUB WORKFLOWS..
+
+But we wont rely on this features. Since its provided by Playwright.
+
+Explanation about yml file: 
+----------------------------
+Push and pull : where we have to specify which branch we involve into execution.
+node-version: lts/* means latest 
+run: where we can run all the test present in test folder, or else we can go with groupings. or we can give the names which we already created in config file.
+
+After we added the file. whenever we push our code to remote reporistory, it will start the execution in github reporistory.
+
+once added changes, push code to required branch. as soon as code pushed.
+Go to the reporistory -> Actions ->
+
 
 
 
